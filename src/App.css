@@ -1,38 +1,56 @@
 .App {
+  text-align: left;
+  background-color: #dff5df;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.f-35 {
+  font-size: 33px !important;
+}
+.b-radius-10 {
+  border-radius: 10px;
+}
+.text-green{
+  color: green;
+}
+.has-search .form-control {
+  padding-left: 3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  background-color: lightgray;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.has-search .form-control:focus {
+  border: 2px solid green;
+}
+
+.has-search .form-control-search-icon {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  line-height: 2.375rem;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
   pointer-events: none;
+  color: #aaa;
+  top: 15px;
+  left: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.has-search .form-control:focus+.form-control-search-icon{
+  fill: green;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.human-card {
+  border: 2px solid white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-
-.App-link {
-  color: #61dafb;
+.human-card:hover {
+  cursor: pointer;
+  border: 2px solid green;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.human-card:focus {
+  border: 2px solid green;
 }
